@@ -3,10 +3,7 @@
 XML Relations Netzwerkvisualisierung
 
 Dieses Projekt ist eine interaktive, webbasierte Visualisierung eines Beziehungsnetzwerks, das aus XML-Daten extrahiert wurde. Es stellt bibliografische Einträge und Personen als Knoten dar und visualisiert die verschiedenen Arten von Beziehungen (Zitate, Referenzen etc.) zwischen ihnen als Kanten. Die Anwendung ist in einer einzigen, eigenständigen HTML-Datei implementiert und nutzt die JavaScript-Bibliothek vis.js für die Darstellung des Netzwerks.
-Vorschau
 
-(Hinweis: Dies ist ein beispielhafter Screenshot. Das tatsächliche Aussehen kann je nach Interaktion variieren.)
-Hauptfunktionen
 
     Interaktiver Graph: Knoten können verschoben, ausgewählt und inspiziert werden. Das Netzwerk-Layout wird dynamisch berechnet.
 
