@@ -21,7 +21,7 @@ Wie man es benutzt
 
 Da es sich um eine einzelne, in sich geschlossene HTML-Datei handelt, ist keine Installation oder ein Webserver erforderlich.
 
-    Laden Sie die Datei Sinarum-Clavis_visualisation.html herunter.
+    Laden Sie die Datei Sinarum_Clavis_visualisation.html herunter.
 
     Öffnen Sie die Datei in einem modernen Webbrowser (z.B. Chrome, Firefox, Edge).
 
