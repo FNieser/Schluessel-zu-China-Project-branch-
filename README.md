@@ -97,11 +97,6 @@ Jeder Knoten repräsentiert eine Entität (z.B. eine bibliografische Quelle) und
 
     
 
-IGNORE_WHEN_COPYING_START
-Use code with caution. Json
-IGNORE_WHEN_COPYING_END
-Kanten (edgeData)
-
 Jede Kante repräsentiert eine Beziehung zwischen zwei Knoten und hat folgende Struktur:
 
       
@@ -116,14 +111,3 @@ Jede Kante repräsentiert eine Beziehung zwischen zwei Knoten und hat folgende S
   "width": 2
 }
 
-    
-
-IGNORE_WHEN_COPYING_START
-Use code with caution. Json
-IGNORE_WHEN_COPYING_END
-
-    from / to: Verweisen auf die id der verbundenen Knoten.
-
-    type: Definiert die Art der Beziehung (z.B. CitOf).
-
-    hierarchy: Ordnet die Beziehung einer hierarchischen Ebene zu.
