@@ -1,5 +1,13 @@
 # Schlüssel zu China
 
+Wie man es benutzt
+
+Da es sich um eine einzelne, in sich geschlossene HTML-Datei handelt, ist keine Installation oder ein Webserver erforderlich.
+
+    Laden Sie die Datei Sinarum_Clavis_visualisation.html herunter.
+
+    Öffnen Sie die Datei in einem modernen Webbrowser (z.B. Chrome, Firefox, Edge).
+
 XML Relations Netzwerkvisualisierung
 
 Dieses Projekt ist eine interaktive, webbasierte Visualisierung eines Beziehungsnetzwerks, das aus XML-Daten extrahiert wurde. Es stellt bibliografische Einträge und Personen als Knoten dar und visualisiert die verschiedenen Arten von Beziehungen (Zitate, Referenzen etc.) zwischen ihnen als Kanten. Die Anwendung ist in einer einzigen, eigenständigen HTML-Datei implementiert und nutzt die JavaScript-Bibliothek vis.js für die Darstellung des Netzwerks.
@@ -17,14 +25,7 @@ Dieses Projekt ist eine interaktive, webbasierte Visualisierung eines Beziehungs
 
     Legende: Eine feste Legende am unteren Rand erklärt die Farbcodierung für die verschiedenen Hierarchien und Knotentypen.
 
-Wie man es benutzt
-
-Da es sich um eine einzelne, in sich geschlossene HTML-Datei handelt, ist keine Installation oder ein Webserver erforderlich.
-
-    Laden Sie die Datei Sinarum_Clavis_visualisation.html herunter.
-
-    Öffnen Sie die Datei in einem modernen Webbrowser (z.B. Chrome, Firefox, Edge).
-
+    
 Das Netzwerk wird geladen und Sie können sofort mit den Steuerelementen interagieren.
 Steuerelemente erklärt
 
