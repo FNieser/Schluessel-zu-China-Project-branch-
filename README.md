@@ -4,7 +4,9 @@ Wie man es benutzt
 
 Da es sich um eine einzelne, in sich geschlossene HTML-Datei handelt, ist keine Installation oder ein Webserver erforderlich.
 
-    Laden Sie die Datei Sinarum_Clavis_visualisation.html herunter.
+    Klicken Sie auf die Datei Sinarum_Clavis_visualisation.html
+    
+    Laden Sie die Datei herunter (Download-Symbol neben dem 'Raw' und 'Cpoy Raw-File'-Symbol)
 
     Öffnen Sie die Datei in einem modernen Webbrowser (z.B. Chrome, Firefox, Edge).
 
