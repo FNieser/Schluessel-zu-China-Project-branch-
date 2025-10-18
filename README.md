@@ -1,90 +1,69 @@
-# Schlüssel zu China
+# Unlocking China
 
-Wie man es benutzt
+How to Use It
 
-Da es sich um eine einzelne, in sich geschlossene HTML-Datei handelt, ist keine Installation oder ein Webserver erforderlich.
+As it is a single, self-contained HTML file, no installation or web server is required.
 
-    Klicken Sie auf die Datei Sinarum_Clavis_visualisation.html
-    
-    Laden Sie die Datei herunter (Download-Symbol neben dem 'Raw' und 'Cpoy Raw-File'-Symbol)
+*   Click on the `Sinarum_Clavis_visualisation.html` file
+*   Download the file (Download symbol next to the 'Raw' and 'Copy Raw-File' symbols)
+*   Open the file in a modern web browser (e.g., Chrome, Firefox, Edge).
 
-    Öffnen Sie die Datei in einem modernen Webbrowser (z.B. Chrome, Firefox, Edge).
+XML Relations Network Visualization
 
-XML Relations Netzwerkvisualisierung
+This project is an interactive, web-based visualization of a relationship network extracted from XML data. It represents bibliographic entries and persons as nodes and visualizes the different types of relationships (citations, references, etc.) between them as edges. The application is implemented in a single, standalone HTML file and uses the JavaScript library vis.js for network rendering.
 
-Dieses Projekt ist eine interaktive, webbasierte Visualisierung eines Beziehungsnetzwerks, das aus XML-Daten extrahiert wurde. Es stellt bibliografische Einträge und Personen als Knoten dar und visualisiert die verschiedenen Arten von Beziehungen (Zitate, Referenzen etc.) zwischen ihnen als Kanten. Die Anwendung ist in einer einzigen, eigenständigen HTML-Datei implementiert und nutzt die JavaScript-Bibliothek vis.js für die Darstellung des Netzwerks.
+*   **Interactive Graph:** Nodes can be moved, selected, and inspected. The network layout is calculated dynamically.
+*   **Hierarchy Filter:** Filter the displayed relationships by their hierarchical level (e.g., primary citations only, secondary only, etc.). Lower levels are retained as a gray "baseline structure" to maintain context.
+*   **Filter by Relation Type:** Turn individual relationship types (e.g., CitOf, SecCit) on or off via checkboxes.
+*   **Node Focus:** Select a specific node from a dropdown list to center it in the network and highlight its direct connections.
+*   **Detailed Tooltips:** Hover over a node or edge to display detailed information.
+*   **Legend:** A fixed legend at the bottom explains the color coding for the different hierarchies and node types.
 
+The network will load, and you can immediately interact with the controls.
 
-    Interaktiver Graph: Knoten können verschoben, ausgewählt und inspiziert werden. Das Netzwerk-Layout wird dynamisch berechnet.
+Controls Explained
 
-    Hierarchie-Filter: Filtern Sie die angezeigten Beziehungen nach ihrer hierarchischen Ebene (z.B. nur primäre Zitate, nur sekundäre etc.). Niedrigere Ebenen werden als graue "Grundstruktur" beibehalten, um den Kontext zu wahren.
+*   **Hierarchy Filter:**
+    *   **All Relations:** Displays all active relationships in their respective colors.
+    *   **1st Degree (Primary):** Highlights primary relationships (CitOf, CitIn).
+    *   **2nd Degree (Secondary):** Highlights secondary relationships (SecCit) and represents primary relationships as a gray baseline.
+    *   **3rd Degree (Tertiary):** Highlights tertiary relationships (ThirdCit) and represents lower levels as a gray baseline.
+    *   **Possible New Relations:** Isolates potentially new, not yet confirmed relationships (PotCit).
+    *   **Confirmed New Relations:** Isolates newly discovered and confirmed relationships (NewCit).
 
-    Filter nach Relationstyp: Schalten Sie einzelne Beziehungstypen (z.B. CitOf, SecCit) über Checkboxen ein oder aus.
+*   **Relation Types:**
+    These checkboxes allow you to selectively show and hide types of edges. The colors correspond to those in the legend:
+    *   CitOf, CitIn (Primary, Red)
+    *   SecCit (Secondary, Green)
+    *   ThirdCit (Tertiary, Blue)
+    *   PotCit (Potential, Brown)
+    *   NewCit (New & Confirmed, Violet)
 
-    Knoten-Fokus: Wählen Sie einen bestimmten Knoten aus einer Dropdown-Liste aus, um ihn im Netzwerk zu zentrieren und seine direkten Verbindungen hervorzuheben.
+*   **Focus Node:**
+    Select a bibliographic entry from the list to center the network on this node and zoom in.
 
-    Detaillierte Tooltips: Fahren Sie mit der Maus über einen Knoten oder eine Kante, um detaillierte Informationen anzuzeigen.
+*   **Reset:**
+    Resets the focus and applies the current filters to the entire network.
 
-    Legende: Eine feste Legende am unteren Rand erklärt die Farbcodierung für die verschiedenen Hierarchien und Knotentypen.
+Technical Details
 
-    
-Das Netzwerk wird geladen und Sie können sofort mit den Steuerelementen interagieren.
-Steuerelemente erklärt
+Technologies Used
 
-    Hierarchie-Filter:
+*   **HTML5:** Basic page structure.
+*   **CSS3:** User interface styling.
+*   **Bootstrap 5:** CSS framework for a responsive and clean layout of the controls.
+*   **JavaScript (ES6):** Application logic for filtering and interaction.
+*   **vis.js (vis-network):** The core library for creating and manipulating the interactive network visualization.
 
-        Alle Relationen: Zeigt alle aktiven Beziehungen in ihrer jeweiligen Farbe an.
+Data Structure
 
-        1. Grad (Primäre): Hebt primäre Beziehungen (CitOf, CitIn) hervor.
+The network data (nodes and edges) are embedded directly as JavaScript arrays (`nodeData`, `edgeData`) in the HTML file.
 
-        2. Grad (Sekundäre): Hebt sekundäre Beziehungen (SecCit) hervor und stellt primäre Beziehungen als graue Basis dar.
+Nodes (`nodeData`)
 
-        3. Grad (Tertiäre): Hebt tertiäre Beziehungen (ThirdCit) hervor und stellt niedrigere Ebenen als graue Basis dar.
+Each node represents an entity (e.g., a bibliographic source) and has the following structure:
 
-        Mögliche Neue Relationen: Isoliert potenziell neue, noch nicht bestätigte Beziehungen (PotCit).
-
-        Bestätigte Neue Relationen: Isoliert neu entdeckte und bestätigte Beziehungen (NewCit).
-
-    Relations-Typen:
-    Mit diesen Checkboxen können Sie gezielt Typen von Kanten ein- und ausblenden. Die Farben entsprechen denen in der Legende:
-
-        CitOf, CitIn (Primär, Rot)
-
-        SecCit (Sekundär, Grün)
-
-        ThirdCit (Tertiär, Blau)
-
-        PotCit (Potenziell, Braun)
-
-        NewCit (Neu & Bestätigt, Violett)
-
-    Knoten fokussieren:
-    Wählen Sie einen bibliografischen Eintrag aus der Liste, um das Netzwerk auf diesen Knoten zu zentrieren und ihn zu vergrößern.
-
-    Zurücksetzen:
-    Setzt die Fokussierung zurück und wendet die aktuellen Filter auf das gesamte Netzwerk an.
-
-Technische Details
-Verwendete Technologien
-
-    HTML5: Grundstruktur der Seite.
-
-    CSS3: Styling der Benutzeroberfläche.
-
-    Bootstrap 5: CSS-Framework für ein responsives und sauberes Layout der Steuerelemente.
-
-    JavaScript (ES6): Anwendungslogik für Filterung und Interaktion.
-
-    vis.js (vis-network): Die Kernbibliothek zur Erstellung und Manipulation der interaktiven Netzwerkvisualisierung.
-
-Datenstruktur
-
-Die Netzwerkdaten (Knoten und Kanten) sind direkt als JavaScript-Arrays (nodeData, edgeData) in die HTML-Datei eingebettet.
-Knoten (nodeData)
-
-Jeder Knoten repräsentiert eine Entität (z.B. eine bibliografische Quelle) und hat folgende Struktur:
-
-      
+```json
 {
   "id": "bibl00023",
   "label": "A Madman's Diary",
@@ -94,12 +73,13 @@ Jeder Knoten repräsentiert eine Entität (z.B. eine bibliografische Quelle) und
   "shape": "square",
   "size": 20
 }
+```
 
-    
+Edges (`edgeData`)
 
-Jede Kante repräsentiert eine Beziehung zwischen zwei Knoten und hat folgende Struktur:
+Each edge represents a relationship between two nodes and has the following structure:
 
-      
+```json
 {
   "from": "bibl00021",
   "to": "bibl00023",
@@ -110,4 +90,4 @@ Jede Kante repräsentiert eine Beziehung zwischen zwei Knoten und hat folgende S
   "desc": "",
   "width": 2
 }
-
+```
