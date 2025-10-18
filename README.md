@@ -4,7 +4,7 @@ How to Use It
 
 As it is a single, self-contained HTML file, no installation or web server is required.
 
-*   Click on the `Sinarum_Clavis_visualisation.html` file
+*   Click on the `Schluessel_zu_China_Visualisierung.html` file
 *   Download the file (Download symbol next to the 'Raw' and 'Copy Raw-File' symbols)
 *   Open the file in a modern web browser (e.g., Chrome, Firefox, Edge).
 
